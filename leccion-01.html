@@ -53,11 +53,18 @@
         </div>
 
         <div class="audio-placeholder">
-          <div>
-            <strong>Inserta aquí el reproductor de Spotify o tu archivo de audio</strong><br>
-            <small>Reemplaza este bloque por el iframe correspondiente.</small>
-          </div>
-        </div>
+  <iframe
+    data-testid="embed-iframe"
+    src="https://open.spotify.com/embed/episode/1IrKatxBT8tlkY5ncrNgjX?utm_source=generator&si=8913e6831f5e4543"
+    width="100%"
+    height="152"
+    frameborder="0"
+    allowfullscreen
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+  </iframe>
+</div>
+
       </article>
 
       <article class="panel transcript">
@@ -69,7 +76,9 @@
           El quechua aparece en verde y su traducción inmediata en naranja.
         </div>
 
-        ```html
+
+<div class="texto-transcripcion">
+
 <h2>Primera clase de Wanka Limay</h2>
 
 <p>
@@ -1167,7 +1176,10 @@
     <span class="quechua">Walakama.</span>
     <span class="traduccion">— Hasta mañana.</span>
 </p>
-```
+
+</div>
+
+
 
 
         
@@ -1257,5 +1269,7 @@
     <div class="footer-bottom">© 2026 Wanka Limay</div>
   </div>
 </footer>
+
+<script src="./js/transcripcion.js"></script>
 </body>
 </html>
