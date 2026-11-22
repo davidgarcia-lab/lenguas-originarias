@@ -418,3 +418,33 @@
 .dictionary-block ul { margin: 0; padding: 0; list-style: none; }
 .dictionary-block li { padding-block: .4rem; }
 .dictionary-block li + li { border-top: 1px solid var(--line); }
+
+.dictionary-card + .dictionary-card { margin-top: .85rem; }
+.dictionary-original { width: min(100%, 650px); height: auto; margin: 1rem auto; background: white; }
+.source-transcription { white-space: pre-line; }
+.dictionary-page { color: var(--muted); white-space: nowrap; }
+
+.dictionary-directions { margin-bottom: .8rem; }
+.dictionary-directions label { display: block; font-weight: 750; margin-bottom: .35rem; }
+.dictionary-directions select { width: 100%; padding: .55rem .8rem; font: inherit; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); }
+
+
+.dictionary-guides { margin-block: 1.25rem; display: grid; gap: .65rem; }
+.dictionary-guide { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); overflow: hidden; }
+.dictionary-guide > summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: .8rem 1.15rem; font-weight: 750; color: var(--ocean);
+  cursor: pointer; list-style: none;
+}
+.dictionary-guide > summary::-webkit-details-marker { display: none; }
+.dictionary-guide > summary::after { content: "+"; font-size: 1.4rem; line-height: 1; }
+.dictionary-guide[open] > summary::after { content: "−"; }
+.dictionary-guide > summary:hover { background: var(--sky); }
+.dictionary-guide > summary:focus-visible { outline-offset: -4px; }
+.dictionary-guide[open] > summary { border-bottom: 1px solid var(--line); }
+.dictionary-help-content { padding: clamp(1rem, 3vw, 1.5rem); }
+.dictionary-help-content p:last-child { margin-bottom: 0; }
+.dictionary-help-content dl { margin: 0; }
+.dictionary-help-content dl > div { display: grid; grid-template-columns: minmax(5.5rem, 8rem) 1fr; gap: .75rem; padding-block: .45rem; border-bottom: 1px solid var(--line); }
+.dictionary-help-content dt { font-weight: 750; }
+.dictionary-help-content dd { margin: 0; }
